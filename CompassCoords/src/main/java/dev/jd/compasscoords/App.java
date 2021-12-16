@@ -44,8 +44,7 @@ public class App extends JavaPlugin {
 							+ " " + ChatColor.AQUA + formatter.format(z);
 
 					// Send the message to the player
-					ActionBarMessage abMessage = new ActionBarMessage(message);
-					abMessage.sendToPlayer(curPlayer);
+					ActionBarMessage.sendMessageToPlayer(curPlayer, message);
 
 				}
 
